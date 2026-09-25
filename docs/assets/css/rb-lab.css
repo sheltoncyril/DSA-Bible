@@ -1,0 +1,41 @@
+/* Red-black tree lab (rb-lab.js). Reuses the .tl tokens from tree-lab.css. */
+
+.rb { --rb-red: #e03131; --rb-black: #25262b; --rb-black-stroke: #25262b; }
+[data-md-color-scheme="slate"] .rb { --rb-red: #f03e3e; --rb-black: #101113; --rb-black-stroke: #c1c2c5; }
+
+.rb-svg { max-height: 420px; }
+.rb-node { transition: transform 0.45s ease; }
+@media (prefers-reduced-motion: reduce) { .rb-node, .rb-edge { transition: none !important; } }
+.rb-node circle { stroke-width: 2.5; transition: fill 0.3s, stroke 0.3s; }
+.rb-red circle { fill: var(--rb-red); stroke: var(--rb-red); }
+.rb-black circle { fill: var(--rb-black); stroke: var(--rb-black-stroke); }
+.rb-val { text-anchor: middle; font-weight: 700; font-size: 14px; fill: #fff; pointer-events: none; }
+
+.rb-edge { fill: none; stroke: var(--tl-edge); stroke-width: 2.5; transition: d 0.45s ease; }
+.rb-edge-bad { stroke: var(--rb-red); stroke-width: 5; stroke-dasharray: 6 4; animation: tl-dash 0.8s linear infinite; }
+.rb-bad circle { stroke: var(--tl-active); stroke-width: 5; }
+
+.rb-tag rect { fill: var(--tl-muted); }
+.rb-tag text { text-anchor: middle; font-size: 11px; font-weight: 700; fill: #fff; }
+.rb-role-cur .rb-tag rect { fill: var(--tl-active); }
+.rb-role-parent .rb-tag rect { fill: var(--tl-waiting); }
+.rb-role-grand .rb-tag rect { fill: var(--tl-base); }
+.rb-role-uncle .rb-tag rect { fill: var(--tl-right); }
+[data-md-color-scheme="slate"] .rb-tag text { fill: #111; }
+.rb-role-cur circle { stroke: var(--tl-active); stroke-width: 5; }
+
+.rb-rules { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.rb-rule { padding: 2px 8px; border-radius: 999px; font-size: 0.66rem; font-weight: 600; }
+.rb-ok { background: var(--tl-done-fill); color: var(--tl-done); }
+.rb-no { background: var(--tl-warn-fill); color: var(--tl-warn); }
+.rb-stats { margin-left: auto; color: var(--tl-muted); }
+
+.rb-code-pane { margin-top: 8px; }
+.rb-kw-red { color: var(--rb-red); font-weight: 700; }
+.rb-kw-black { font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; }
+
+.rb-narr-bad { border-left-color: var(--tl-warn); background: var(--tl-warn-fill); } .rb-narr-bad .tl-tag { background: var(--tl-warn); }
+.rb-narr-case { border-left-color: var(--tl-waiting); } .rb-narr-case .tl-tag { background: var(--tl-waiting); }
+.rb-narr-fix, .rb-narr-done { border-left-color: var(--tl-done); } .rb-narr-fix .tl-tag, .rb-narr-done .tl-tag { background: var(--tl-done); }
+.rb-narr-up { border-left-color: var(--tl-base); } .rb-narr-up .tl-tag { background: var(--tl-base); }
+.rb-narr-insert { border-left-color: var(--tl-active); } .rb-narr-insert .tl-tag { background: var(--tl-active); }

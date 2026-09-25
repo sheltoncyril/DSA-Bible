@@ -5,9 +5,9 @@ The owner adds a chapter whenever a concept doesn't click. Typical request: "I'm
 
 ## Layout
 
-- `docs/` holds the site. Each part is a folder (`docs/trees/`), and each part has an `index.md` overview.
-- `docs/assets/js/tree-lab.js` holds the interactive tree widgets (`tree-lab`, `tree-ask`, `tree-measure`). Reference: `docs/guide/demos.md`.
-- `docs/assets/css/` holds `book.css` (site-wide) and `tree-lab.css` (widgets).
+- `docs/` holds the site. Each part is a folder (`docs/trees/`, `docs/balanced/`). A part with several chapters gets an `index.md` overview.
+- `docs/assets/js/tree-lab.js` holds the interactive tree widgets (`tree-lab`, `tree-ask`, `tree-measure`). `docs/assets/js/rb-lab.js` holds the red-black insert visualizer (`rb-lab`). Reference: `docs/guide/demos.md`.
+- `docs/assets/css/` holds `book.css` (site-wide) and one stylesheet per widget script (`tree-lab.css`, `rb-lab.css`).
 - `templates/chapter.md` is the skeleton for new chapters.
 - `mkdocs.yml`: **every new page must be added to `nav:`**.
 - `.github/workflows/deploy.yml` builds with `--strict` and deploys on pushes to the default branch.
@@ -28,6 +28,8 @@ Goal: build *intuition*, not just a reference. The owner wants to understand, no
 10. Link back to earlier chapters instead of re-explaining them. Link forward when a later chapter goes deeper.
 
 Style: second person, short paragraphs, plain words. Bold the one phrase per paragraph that matters. No filler intros.
+
+**Keep it short.** The owner doesn't want to read a lot. Aim for a chapter that fits in about two screens plus the demo: a big-idea box, a cheat-sheet table, the demo, and everything else (code, FAQs, check-yourself) folded into `???` blocks. The list above is a menu, not a quota; `docs/balanced/red-black-insert.md` shows the target length.
 
 ## Demos
 

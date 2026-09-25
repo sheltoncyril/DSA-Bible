@@ -54,6 +54,18 @@ Works with any problem that defines `explain` (`height`, `size`, `sum`, `max`, `
 
 <div class="tree-measure" data-tree="[A,B,C,D,E,null,F]"></div>
 
+## `rb-lab`: red-black tree insert
+
+Insert values and step through `fix_insert`: roles (cur / parent / grandpa / uncle), the three rules as pass/fail pills, the pseudocode line, and rotations animating in place. Lives in `rb-lab.js`.
+
+```html
+<div class="rb-lab" data-insert="10,30,20"></div>
+```
+
+`data-insert` pre-inserts values and opens on the first step of the **last** insert.
+
+<div class="rb-lab" data-insert="20,10,30,5"></div>
+
 ## Adding a new problem to the visualizer
 
 Add an entry to `PROBLEMS` in `tree-lab.js`. A problem is the real recursive algorithm, written in JS, that reports each step to a tracer `t`:
