@@ -62,9 +62,11 @@ markdown_extensions:
 extra_css:
   - assets/css/book.css
   - assets/css/tree-lab.css
+  - assets/css/rb-lab.css
 
 extra_javascript:
   - assets/js/tree-lab.js
+  - assets/js/rb-lab.js
 
 nav:
   - Home: index.md
@@ -75,6 +77,8 @@ nav:
       - 3. Depth vs height (down vs up): trees/depth-vs-height.md
       - 4. One template, many problems: trees/pattern-catalog.md
       - 5. Practice: trees/practice.md
+  - Balanced Trees:
+      - Red-black insert, simply: balanced/red-black-insert.md
   - How this book works:
       - guide/index.md
       - Demo reference: guide/demos.md
