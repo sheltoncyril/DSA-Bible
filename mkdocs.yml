@@ -1,0 +1,80 @@
+site_name: DSA Bible
+site_description: A personal, interactive textbook for the data-structures & algorithms ideas that are hard to "get".
+site_url: https://sheltoncyril.github.io/DSA-Bible/
+repo_url: https://github.com/sheltoncyril/DSA-Bible
+repo_name: sheltoncyril/DSA-Bible
+
+theme:
+  name: material
+  icon:
+    logo: material/book-open-page-variant
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+
+extra_css:
+  - assets/css/book.css
+  - assets/css/tree-lab.css
+
+extra_javascript:
+  - assets/js/tree-lab.js
+
+nav:
+  - Home: index.md
+  - Trees & Recursion:
+      - trees/index.md
+      - 1. Thinking recursively about trees: trees/thinking-recursively.md
+      - 2. Tree height, slowly: trees/height.md
+      - 3. Depth vs height (down vs up): trees/depth-vs-height.md
+      - 4. One template, many problems: trees/pattern-catalog.md
+      - 5. Practice: trees/practice.md
+  - How this book works:
+      - guide/index.md
+      - Demo reference: guide/demos.md

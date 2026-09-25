@@ -1,0 +1,28 @@
+/* Book-wide tweaks on top of Material. */
+
+/* A little more room for the interactive demos on wide screens. */
+.md-grid { max-width: 1400px; }
+
+/* "Big idea" one-liners that summarise a section. */
+.big-idea {
+  font-size: 1.05em;
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding: 0.6em 1em;
+  margin: 1.4em 0;
+  background: var(--md-code-bg-color);
+  border-radius: 0 8px 8px 0;
+}
+.big-idea strong { color: var(--md-accent-fg-color); }
+
+/* Chapter cards on index pages. */
+.chapter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 1em 0; }
+.chapter-grid a {
+  display: block; padding: 12px 14px; border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px; color: inherit;
+}
+.chapter-grid a:hover { border-color: var(--md-accent-fg-color); }
+.chapter-grid b { display: block; color: var(--md-typeset-a-color); margin-bottom: 4px; }
+.chapter-grid span { font-size: 0.9em; opacity: 0.8; }
+
+/* Tables of "bug -> symptom -> fix" read better compact. */
+.md-typeset table:not([class]) { font-size: 0.72rem; }
