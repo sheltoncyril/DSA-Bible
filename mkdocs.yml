@@ -63,10 +63,12 @@ extra_css:
   - assets/css/book.css
   - assets/css/tree-lab.css
   - assets/css/rb-lab.css
+  - assets/css/np-lab.css
 
 extra_javascript:
   - assets/js/tree-lab.js
   - assets/js/rb-lab.js
+  - assets/js/np-lab.js
 
 nav:
   - Home: index.md
@@ -79,6 +81,8 @@ nav:
       - 5. Practice: trees/practice.md
   - Balanced Trees:
       - Red-black insert, simply: balanced/red-black-insert.md
+  - Complexity:
+      - P, NP, NP-hard, NP-complete, simply: complexity/np.md
   - How this book works:
       - guide/index.md
       - Demo reference: guide/demos.md

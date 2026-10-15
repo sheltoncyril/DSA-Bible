@@ -5,9 +5,9 @@ The owner adds a chapter whenever a concept doesn't click. Typical request: "I'm
 
 ## Layout
 
-- `docs/` holds the site. Each part is a folder (`docs/trees/`, `docs/balanced/`). A part with several chapters gets an `index.md` overview.
-- `docs/assets/js/tree-lab.js` holds the interactive tree widgets (`tree-lab`, `tree-ask`, `tree-measure`). `docs/assets/js/rb-lab.js` holds the red-black insert visualizer (`rb-lab`). Reference: `docs/guide/demos.md`.
-- `docs/assets/css/` holds `book.css` (site-wide) and one stylesheet per widget script (`tree-lab.css`, `rb-lab.css`).
+- `docs/` holds the site. Each part is a folder (`docs/trees/`, `docs/balanced/`, `docs/complexity/`). A part with several chapters gets an `index.md` overview.
+- `docs/assets/js/tree-lab.js` holds the interactive tree widgets (`tree-lab`, `tree-ask`, `tree-measure`). `docs/assets/js/rb-lab.js` holds the red-black insert visualizer (`rb-lab`). `docs/assets/js/np-lab.js` holds the P/NP demos (`np-lab` with `data-mode` = `verify`, `reduce`, `map`). Reference: `docs/guide/demos.md`.
+- `docs/assets/css/` holds `book.css` (site-wide) and one stylesheet per widget script (`tree-lab.css`, `rb-lab.css`, `np-lab.css`).
 - `templates/chapter.md` is the skeleton for new chapters.
 - `mkdocs.yml`: **every new page must be added to `nav:`**.
 - `.github/workflows/deploy.yml` builds with `--strict` and deploys on pushes to the default branch.
