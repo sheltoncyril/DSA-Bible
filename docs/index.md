@@ -22,6 +22,7 @@ Each chapter explains **one** hard idea slowly: the intuition first, then the co
   <a href="trees/pattern-catalog/"><b>4. One template, many problems</b><span>Size, sum, max, leaves, min-depth (and its trap), diameter: all the same function.</span></a>
   <a href="trees/practice/"><b>5. Practice</b><span>Classic problems with hints and worked solutions.</span></a>
   <a href="balanced/red-black-insert/"><b>Red-black insert, simply</b><span>Insert red, fix red-under-red, and look at the uncle. With a step-through demo that animates the rotations.</span></a>
+  <a href="complexity/np/"><b>P, NP, NP-hard, NP-complete, simply</b><span>Easy to check vs easy to solve, reductions, and a map you can quiz yourself on. Three small demos.</span></a>
 </div>
 
 ## Try it right now

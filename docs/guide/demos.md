@@ -66,6 +66,34 @@ Insert values and step through `fix_insert`: roles (cur / parent / grandpa / unc
 
 <div class="rb-lab" data-insert="20,10,30,5"></div>
 
+## `np-lab`: P / NP / NP-hard / NP-complete
+
+Three small demos in one script, `np-lab.js`. Pick one with `data-mode`.
+
+**`verify`**: subset sum. Pick a subset (checking is one pass) or let brute force count through all 2ⁿ subsets.
+
+```html
+<div class="np-lab" data-mode="verify" data-numbers="12,16,35,15,7,17,13,33" data-target="107"></div>
+```
+
+<div class="np-lab" data-mode="verify" data-numbers="12,16,35,15,7,17,13,33" data-target="107"></div>
+
+**`reduce`**: independent set ↔ vertex cover ↔ clique (on the complement graph). Three separate checkers that always agree. `data-edges` takes up to 10 nodes `A`–`J`.
+
+```html
+<div class="np-lab" data-mode="reduce" data-edges="A-B,B-C,C-D,D-E,E-F,F-G,G-A,A-D,B-F"></div>
+```
+
+<div class="np-lab" data-mode="reduce" data-edges="A-B,B-C,C-D,D-E,E-F,F-G,G-A,A-D,B-F"></div>
+
+**`map`**: an Euler diagram of P, NP, NP-complete and NP-hard with 16 classified problems, a P = NP switch and a quiz. `data-start` is the id of the problem shown first (see `ITEMS` in `np-lab.js`). To add a problem, add an entry there: `region` is `P`, `NPI`, `NPC` or `NPH`, and `x`, `y` place its dot.
+
+```html
+<div class="np-lab" data-mode="map" data-start="sat3"></div>
+```
+
+<div class="np-lab" data-mode="map" data-start="factor"></div>
+
 ## Adding a new problem to the visualizer
 
 Add an entry to `PROBLEMS` in `tree-lab.js`. A problem is the real recursive algorithm, written in JS, that reports each step to a tracer `t`:

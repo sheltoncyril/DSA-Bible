@@ -7,6 +7,8 @@ A personal, interactive textbook for the data-structures & algorithms ideas that
 ## Contents
 
 - **Trees & Recursion**: thinking recursively, tree height (with a step-through call-stack visualizer), depth vs height, the one-template-many-problems catalog, and practice problems.
+- **Balanced Trees**: red-black insert, simply (with a step-through visualizer).
+- **Complexity**: P, NP, NP-hard and NP-complete, simply (check-vs-solve, reduction, and quiz demos).
 
 ## Local preview
 
